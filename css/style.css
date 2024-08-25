@@ -23,19 +23,19 @@ h3{
 h3:hover{
     background: rgb(87, 114, 119);
 }
-p{
-    font-size: 0;
-    display: none;
-    transition: all 3s;
+p {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    background: rgb(221, 227, 234);
+    transition: all 300ms;
 }
 #tOne:checked + #pOne,
 #tTwo:checked + #pTwo,
 #tThree:checked + #pThree{
-    font-size: 16px;
-    text-align: left;
+    max-height: 1000px;
+    visibility: visible;
     padding: 10px 16px;
-    background: rgb(221, 227, 234);
-    display: block;
-    
 }
 
